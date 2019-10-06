@@ -1,0 +1,4 @@
+bin/
+lib/
+external/
+cmake-build-debug/
