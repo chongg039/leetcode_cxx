@@ -21,12 +21,21 @@ MESSAGE("++++++++++++++Start Build+++++++++++++++++")
 # 并将名称保存到 DIR_SRCS 变量
 aux_source_directory(. DIR_SRCS)
 
-#为项目引入测试功能
+# 添加googletest
 add_subdirectory(code_tests)
 add_subdirectory(external/googletest-master/googletest)
-include_directories(
-        external/googletest-master/googletest/include
-)
+include_directories(external/googletest-master/googletest/include)
+
+# 让clion自己寻找boost，若引入package有红色下划线，需要在Tools中Resync with remote host重新导入所有头文件
+find_package(Boost COMPONENTS system filesystem thread REQUIRED)
+if(Boost_FOUND)
+    message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
+    message(STATUS "Boost_LIBRARY_DIRS: ${Boost_LIBRARY_DIRS}")
+    message(STATUS "Boost_LIBRARIES: ${Boost_LIBRARIES}")
+    message(STATUS "Boost_VERSION: ${Boost_VERSION}")
+endif()
+include_directories(${Boost_INCLUDE_DIRS})
+link_directories(${Boost_LIBRARY_DIRS})
 
 add_subdirectory(1_two_sum)
 add_subdirectory(2_add2numbers)
@@ -39,3 +48,4 @@ target_link_libraries(main TwoSum)
 target_link_libraries(main AddNumber)
 target_link_libraries(main LongestSubString)
 target_link_libraries(main MedianTwoSortedArray)
+#target_link_libraries(main ${Boost_LIBRARIES})
