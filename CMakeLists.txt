@@ -41,6 +41,7 @@ add_subdirectory(1_two_sum)
 add_subdirectory(2_add2numbers)
 add_subdirectory(3_longest_substring)
 add_subdirectory(4_median_two_sorted_arrays)
+add_subdirectory(5_longest_palindromic_substring)
 
 add_executable(main main.cpp)
 # 添加链接库
@@ -48,4 +49,5 @@ target_link_libraries(main TwoSum)
 target_link_libraries(main AddNumber)
 target_link_libraries(main LongestSubString)
 target_link_libraries(main MedianTwoSortedArray)
+target_link_libraries(main LongestPalindromicSubstring)
 #target_link_libraries(main ${Boost_LIBRARIES})
