@@ -5,37 +5,36 @@
 #include "Solution5.h"
 
 string Solution5::longestPalindrome(string s) {
-    for (string::const_iterator it = s.cbegin(); it != s.cend(); ++it) {
+    if (s.empty()) return "";
+    input_s = s;
+    max_str = "";
+    for (string::const_iterator it = input_s.cbegin(); it != input_s.cend(); ++it) {
         string::const_iterator begin = it;
-        string::const_iterator end = s.cend() - 1;
-        stackClear();
-        loop(begin, end);
-
+        string::const_iterator end = input_s.cend() - 1;
+        outLoop(begin, end);
     }
+    return max_str;
 }
 
 // 递归过程
-void Solution5::loop(string::const_iterator begin, string::const_iterator end) {
-    if (begin != end) {
-        if (*begin != *end) {
-            stackClear();
-            loop(begin, end--);
-        } else {
-            temp_stack.push(*begin);
-            if (begin+1 == end) {
-                return;
-            } else {
-                loop(begin++, end--);
-            }
-        }
+void Solution5::outLoop(string::const_iterator begin, string::const_iterator end) {
+    while (*begin != *end) {
+        end--;
+    }
+    string::const_iterator last = end;
+    if (innerLoop(begin, end)) {
+        size_t begin_idx = distance(input_s.cbegin(), begin);
+        size_t end_idx = distance(input_s.cbegin(), last);
+        string sub_max = input_s.substr(begin_idx, end_idx-begin_idx+1);
+        max_str = (sub_max.length() > max_str.length()) ? sub_max : max_str;
+        return ;
     } else {
-        temp_stack.push(*begin);
-        return;
+        return outLoop(begin, end-1);
     }
 }
 
-void Solution5::stackClear() {
-    while (!temp_stack.empty()) {
-        temp_stack.pop();
-    }
+bool Solution5::innerLoop(string::const_iterator begin, string::const_iterator end) {
+    if (*begin == *end && (1 < end - begin)) {
+        return innerLoop(begin+1, end-1);
+    } else return begin == end || (begin + 1 == end && *begin == *end);
 }

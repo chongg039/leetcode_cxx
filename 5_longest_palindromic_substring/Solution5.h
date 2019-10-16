@@ -6,22 +6,26 @@
 #define LEETCODE_SOLUTION5_H
 
 #include <string>
-#include <stack>
 #include <vector>
+#include <stdio.h>
+#include <iostream>
+#include <algorithm>
 
 using std::string;
 using std::vector;
-using std::stack;
+using std::cout;
+using std::endl;
+using std::distance;
 
 class Solution5 {
 public:
     string longestPalindrome(string s);
 
 private:
-    void loop(string::const_iterator begin, string::const_iterator end);
-    void stackClear();
-    vector<int> max_lens;
-    stack<char> temp_stack;
+    void outLoop(string::const_iterator begin, string::const_iterator end);
+    bool innerLoop(string::const_iterator begin, string::const_iterator end);
+    string input_s;
+    string max_str;
 };
 
 
