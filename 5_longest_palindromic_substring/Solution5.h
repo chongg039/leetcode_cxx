@@ -23,7 +23,7 @@ public:
 
 private:
     void outLoop(string::const_iterator begin, string::const_iterator end);
-    bool innerLoop(string::const_iterator begin, string::const_iterator end);
+    static bool innerLoop(string::const_iterator begin, string::const_iterator end);
     string input_s;
     string max_str;
 };
