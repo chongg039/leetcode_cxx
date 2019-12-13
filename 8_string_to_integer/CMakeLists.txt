@@ -1,0 +1,1 @@
+add_library(StringToInteger Solution8.cc)
