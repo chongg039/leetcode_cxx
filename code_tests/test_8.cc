@@ -71,6 +71,48 @@ TEST(GTest8, t9)
     EXPECT_EQ(x_i, Solution8().myAtoi(x));
 }
 
+TEST(GTest8, t10)
+{
+    std::string x("+-9");
+    int x_i = 0;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
+TEST(GTest8, t11)
+{
+    std::string x(" -+9");
+    int x_i = 0;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
+TEST(GTest8, t12)
+{
+    std::string x("  +0 123");
+    int x_i = 0;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
+TEST(GTest8, t13)
+{
+    std::string x("+4193 with words");
+    int x_i = 4193;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
+TEST(GTest8, t14)
+{
+    std::string x("-4193 with words");
+    int x_i = -4193;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
+TEST(GTest8, t15)
+{
+    std::string x("-   4193");
+    int x_i = 0;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
 GTEST_API_ int main(int argc, char *argv[])
 {
     InitGoogleTest(&argc, argv);
