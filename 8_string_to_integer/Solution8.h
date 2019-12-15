@@ -12,7 +12,6 @@ class Solution8
 {
 public:
     int myAtoi(const std::string &str);
-    int myAtoi1(const std::string &str);
 };
 
 

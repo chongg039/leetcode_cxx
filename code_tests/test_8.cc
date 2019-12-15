@@ -113,6 +113,13 @@ TEST(GTest8, t15)
     EXPECT_EQ(x_i, Solution8().myAtoi(x));
 }
 
+TEST(GTest8, t16)
+{
+    std::string x(" -1010023630o4");
+    int x_i = -1010023630;
+    EXPECT_EQ(x_i, Solution8().myAtoi(x));
+}
+
 GTEST_API_ int main(int argc, char *argv[])
 {
     InitGoogleTest(&argc, argv);

@@ -1,0 +1,1 @@
+add_library(PalindromeNumber Solution9.cc)
