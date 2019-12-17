@@ -12,6 +12,7 @@ class Solution10
 {
 public:
     static bool isMatch(const std::string &s, const std::string &p);
+    static bool isMatchDp(const std::string &s, const std::string &p);
 };
 
 
