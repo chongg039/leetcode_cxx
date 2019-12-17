@@ -47,5 +47,6 @@ add_subdirectory(7_reverse_integer)
 add_subdirectory(8_string_to_integer)
 add_subdirectory(9_palindrome_number)
 add_subdirectory(10_regular_expression_matching)
+add_subdirectory(11_container_with_most_water)
 
 add_executable(main main.cpp)
