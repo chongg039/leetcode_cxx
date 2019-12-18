@@ -4,5 +4,5 @@ aux_source_directory(. DIR_LIB_SRCS)
 # 生成链接库
 #add_library(LongestPalindromicSubstring ${DIR_LIB_SRCS})
 
-add_library(LongestPalindromicSubstring ./Solution5.cpp)
-add_library(LongestPalindromicSubstringDP ./Solution5_dp.cpp)
+add_library(LongestPalindromicSubstring Solution5.cc)
+add_library(LongestPalindromicSubstringDP Solution5_dp.cc)

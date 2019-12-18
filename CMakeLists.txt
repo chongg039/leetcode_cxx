@@ -49,5 +49,7 @@ add_subdirectory(9_palindrome_number)
 add_subdirectory(10_regular_expression_matching)
 add_subdirectory(11_container_with_most_water)
 add_subdirectory(12_integer_to_roman)
+add_subdirectory(13_roman_to_integer)
+add_subdirectory(14_longest_common_prefix)
 
 add_executable(main main.cpp)

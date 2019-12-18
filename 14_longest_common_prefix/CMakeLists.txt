@@ -1,0 +1,1 @@
+add_library(LongestCommonPrefix Solution14.cc)
