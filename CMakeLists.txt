@@ -52,5 +52,6 @@ add_subdirectory(12_integer_to_roman)
 add_subdirectory(13_roman_to_integer)
 add_subdirectory(14_longest_common_prefix)
 add_subdirectory(15_three_sum)
+add_subdirectory(16_three_sum_closest)
 
 add_executable(main main.cpp)
