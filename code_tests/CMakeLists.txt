@@ -13,6 +13,7 @@ add_executable(run_test_11 test_11.cc ../11_container_with_most_water/Solution11
 add_executable(run_test_12 test_12.cc ../12_integer_to_roman/Solution12.cc)
 add_executable(run_test_13 test_13.cc ../13_roman_to_integer/Solution13.cc)
 add_executable(run_test_14 test_14.cc ../14_longest_common_prefix/Solution14.cc)
+add_executable(run_test_15 test_15.cc ../15_three_sum/Solution15.cc)
 
 target_link_libraries(run_test_1 gtest gtest_main)
 target_link_libraries(run_test_2 gtest gtest_main)
@@ -29,3 +30,4 @@ target_link_libraries(run_test_11 gtest gtest_main)
 target_link_libraries(run_test_12 gtest gtest_main)
 target_link_libraries(run_test_13 gtest gtest_main)
 target_link_libraries(run_test_14 gtest gtest_main)
+target_link_libraries(run_test_15 gtest gtest_main)
