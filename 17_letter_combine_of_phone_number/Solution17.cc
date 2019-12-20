@@ -14,6 +14,7 @@ std::vector<std::string> Solution17::letterCombinations(const std::string &digit
         switch (digit) {
             case '2':
                 for (std::string &s : result) {
+                    // 必须先初始化，尤其是对push_back而言，否则会段错误
                     std::string s1{s + "b"};
                     std::string s2{s + "c"};
                     s += "a";
