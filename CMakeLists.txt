@@ -55,5 +55,8 @@ add_subdirectory(15_three_sum)
 add_subdirectory(16_three_sum_closest)
 add_subdirectory(17_letter_combine_of_phone_number)
 add_subdirectory(18_four_sum)
+add_subdirectory(19_rm_nth_node_from_end)
+add_subdirectory(20_valid_parentheses)
+add_subdirectory(21_merge_two_sorted_lists)
 
 add_executable(main main.cpp)
