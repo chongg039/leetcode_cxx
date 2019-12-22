@@ -1,0 +1,1 @@
+add_library(GenerateParentheses Solution22.cc)

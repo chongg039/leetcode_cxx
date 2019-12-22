@@ -58,5 +58,7 @@ add_subdirectory(18_four_sum)
 add_subdirectory(19_rm_nth_node_from_end)
 add_subdirectory(20_valid_parentheses)
 add_subdirectory(21_merge_two_sorted_lists)
+add_subdirectory(22_generate_parentheses)
+add_subdirectory(23_merge_k_sorted_lists)
 
 add_executable(main main.cpp)
