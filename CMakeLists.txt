@@ -60,5 +60,6 @@ add_subdirectory(20_valid_parentheses)
 add_subdirectory(21_merge_two_sorted_lists)
 add_subdirectory(22_generate_parentheses)
 add_subdirectory(23_merge_k_sorted_lists)
+add_subdirectory(24_swap_nodes_in_pairs)
 
 add_executable(main main.cpp)
