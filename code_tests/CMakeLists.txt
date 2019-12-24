@@ -23,6 +23,7 @@ add_executable(run_test_21 test_21.cc ../21_merge_two_sorted_lists/Solution21.cc
 add_executable(run_test_22 test_22.cc ../22_generate_parentheses/Solution22.cc)
 add_executable(run_test_23 test_23.cc ../23_merge_k_sorted_lists/Solution23.cc)
 add_executable(run_test_24 test_24.cc ../24_swap_nodes_in_pairs/Solution24.cc)
+add_executable(run_test_25 test_25.cc ../25_reverse_nodes_in_k_groups/Solution25.cc)
 
 target_link_libraries(run_test_1 gtest gtest_main)
 target_link_libraries(run_test_2 gtest gtest_main)
@@ -49,3 +50,4 @@ target_link_libraries(run_test_21 gtest gtest_main)
 target_link_libraries(run_test_22 gtest gtest_main)
 target_link_libraries(run_test_23 gtest gtest_main)
 target_link_libraries(run_test_24 gtest gtest_main)
+target_link_libraries(run_test_25 gtest gtest_main)
