@@ -62,5 +62,8 @@ add_subdirectory(22_generate_parentheses)
 add_subdirectory(23_merge_k_sorted_lists)
 add_subdirectory(24_swap_nodes_in_pairs)
 add_subdirectory(25_reverse_nodes_in_k_groups)
+add_subdirectory(26_remove_duplicates)
+add_subdirectory(27_remove_element)
+add_subdirectory(28_implement_strstr)
 
 add_executable(main main.cpp)
