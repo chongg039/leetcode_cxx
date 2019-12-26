@@ -1,0 +1,1 @@
+add_library(NextPermutation Solution31.cc)

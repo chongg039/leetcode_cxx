@@ -26,7 +26,7 @@ std::vector<int> Solution30::findSubstring(std::string &s, std::vector<std::stri
         if (s.size() - s_idx + 1 < num_size * each_size) break;
         std::map<std::string, int> count_map_bak(count_map.begin(), count_map.end());
         int check_num = 0;
-        int flag = true;
+        bool flag = true;
         while (check_num < num_size) {
             auto iter = count_map_bak.find(s.substr(s_idx + check_num * each_size, each_size));
             if (iter != count_map_bak.end() && iter->second > 0) {
