@@ -1,0 +1,1 @@
+add_library(FindSubString Solution30.cc)

@@ -66,5 +66,6 @@ add_subdirectory(26_remove_duplicates)
 add_subdirectory(27_remove_element)
 add_subdirectory(28_implement_strstr)
 add_subdirectory(29_divide_two_integers)
+add_subdirectory(30_substring_with_concatenation_of_all_words)
 
 add_executable(main main.cpp)
