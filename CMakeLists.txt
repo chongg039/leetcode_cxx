@@ -65,5 +65,6 @@ add_subdirectory(25_reverse_nodes_in_k_groups)
 add_subdirectory(26_remove_duplicates)
 add_subdirectory(27_remove_element)
 add_subdirectory(28_implement_strstr)
+add_subdirectory(29_divide_two_integers)
 
 add_executable(main main.cpp)

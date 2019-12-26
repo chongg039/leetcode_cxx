@@ -27,6 +27,7 @@ add_executable(run_test_25 test_25.cc ../25_reverse_nodes_in_k_groups/Solution25
 add_executable(run_test_26 test_26.cc ../26_remove_duplicates/Solution26.cc)
 add_executable(run_test_27 test_27.cc ../27_remove_element/Solution27.cc)
 add_executable(run_test_28 test_28.cc ../28_implement_strstr/Solution28.cc)
+add_executable(run_test_29 test_29.cc ../29_divide_two_integers/Solution29.cc)
 
 target_link_libraries(run_test_1 gtest gtest_main)
 target_link_libraries(run_test_2 gtest gtest_main)
@@ -57,3 +58,4 @@ target_link_libraries(run_test_25 gtest gtest_main)
 target_link_libraries(run_test_26 gtest gtest_main)
 target_link_libraries(run_test_27 gtest gtest_main)
 target_link_libraries(run_test_28 gtest gtest_main)
+target_link_libraries(run_test_29 gtest gtest_main)
