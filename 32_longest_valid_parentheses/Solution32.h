@@ -6,12 +6,15 @@
 #define LEETCODE_SOLUTION32_H
 
 #include <stack>
+#include <vector>
 #include <string>
 
 class Solution32
 {
 public:
     static int longestValidParentheses(std::string &s);
+    static int longestValidParenthesesDp(std::string &s);
+    static int longestValidParenthesesBf(std::string &s);
     static bool isValid(std::string::iterator left, std::string::iterator right);
 };
 

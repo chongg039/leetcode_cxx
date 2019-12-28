@@ -6,6 +6,45 @@
 
 int Solution32::longestValidParentheses(std::string &s)
 {
+    // 技巧解法，先左遍历，再右遍历
+    // 时间O(n)，空间O(1)
+    int left = 0, right = 0, max_len = 0;
+    for (int i = 0; i < s.length(); ++i) {
+        if ('(' == s[i]) ++left;
+        else ++right;
+        if (left == right) max_len = 2 * right > max_len ? 2 * right : max_len;
+        else if (right > left) left = right = 0;
+    }
+    left = right = 0;
+    for (int i = s.length() - 1; i > -1; --i) {
+        if ('(' == s[i]) ++left;
+        else ++right;
+        if (left == right) max_len = 2 * right > max_len ? 2 * right : max_len;
+        else if (left > right) left = right = 0;
+    }
+    return max_len;
+}
+
+int Solution32::longestValidParenthesesDp(std::string &s)
+{
+    // 时间O(n)，空间O(n)
+    int max_len = 0;
+    std::vector<int> dp(s.length(), 0);
+    for (std::string::size_type i = 1; i < s.length(); ++i) {
+        if (')' == s[i]) {
+            if ('(' == s[i - 1]) {
+                dp[i] = (i >= 2 ? dp[i - 2] : 0) + 2;
+            } else if (i - dp[i - 1] > 0 && '(' == s[i - dp[i - 1] - 1]) {
+                dp[i] = dp[i - 1] + (i - dp[i - 1] >= 2 ? dp[i - dp[i - 1] - 2] : 0) + 2;
+            }
+            max_len = dp[i] > max_len ? dp[i] : max_len;
+        }
+    }
+    return max_len;
+}
+
+int Solution32::longestValidParenthesesBf(std::string &s)
+{
     int max = 0;
     if (s.empty() || 1 == s.size()) return max;
     std::string::iterator left(s.begin());
