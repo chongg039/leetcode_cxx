@@ -1,0 +1,1 @@
+add_library(SearchRange Solution34.cc)

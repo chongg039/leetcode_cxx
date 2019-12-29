@@ -32,6 +32,7 @@ add_executable(run_test_30 test_30.cc ../30_substring_with_concatenation_of_all_
 add_executable(run_test_31 test_31.cc ../31_next_permutation/Solution31.cc)
 add_executable(run_test_32 test_32.cc ../32_longest_valid_parentheses/Solution32.cc)
 add_executable(run_test_33 test_33.cc ../33_search_in_rotated_sorted_array/Solution33.cc)
+add_executable(run_test_34 test_34.cc ../34_find_first_and_last_position/Solution34.cc)
 
 target_link_libraries(run_test_1 gtest gtest_main)
 target_link_libraries(run_test_2 gtest gtest_main)
@@ -67,3 +68,4 @@ target_link_libraries(run_test_30 gtest gtest_main)
 target_link_libraries(run_test_31 gtest gtest_main)
 target_link_libraries(run_test_32 gtest gtest_main)
 target_link_libraries(run_test_33 gtest gtest_main)
+target_link_libraries(run_test_34 gtest gtest_main)

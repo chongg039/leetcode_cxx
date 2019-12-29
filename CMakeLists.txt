@@ -70,5 +70,6 @@ add_subdirectory(30_substring_with_concatenation_of_all_words)
 add_subdirectory(31_next_permutation)
 add_subdirectory(32_longest_valid_parentheses)
 add_subdirectory(33_search_in_rotated_sorted_array)
+add_subdirectory(34_find_first_and_last_position)
 
 add_executable(main main.cpp)
