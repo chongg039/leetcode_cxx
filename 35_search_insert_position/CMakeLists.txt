@@ -1,0 +1,1 @@
+add_library(SearchInsertPosition Solution35.cc)
