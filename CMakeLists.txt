@@ -72,5 +72,6 @@ add_subdirectory(32_longest_valid_parentheses)
 add_subdirectory(33_search_in_rotated_sorted_array)
 add_subdirectory(34_find_first_and_last_position)
 add_subdirectory(35_search_insert_position)
+add_subdirectory(36_valid_sudoku)
 
 add_executable(main main.cpp)

@@ -1,0 +1,1 @@
+add_library(ValidSudoku Solution36.cc)
