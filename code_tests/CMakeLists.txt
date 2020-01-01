@@ -37,6 +37,7 @@ add_executable(run_test_35 test_35.cc ../35_search_insert_position/Solution35.cc
 add_executable(run_test_36 test_36.cc ../36_valid_sudoku/Solution36.cc)
 add_executable(run_test_38 test_38.cc ../38_count_and_say/Solution38.cc)
 add_executable(run_test_39 test_39.cc ../39_combination_sum/Solution39.cc)
+add_executable(run_test_40 test_40.cc ../40_combination_sum_2/Solution40.cc)
 
 target_link_libraries(run_test_1 gtest gtest_main)
 target_link_libraries(run_test_2 gtest gtest_main)
@@ -77,3 +78,4 @@ target_link_libraries(run_test_35 gtest gtest_main)
 target_link_libraries(run_test_36 gtest gtest_main)
 target_link_libraries(run_test_38 gtest gtest_main)
 target_link_libraries(run_test_39 gtest gtest_main)
+target_link_libraries(run_test_40 gtest gtest_main)

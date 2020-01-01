@@ -1,0 +1,1 @@
+add_library(CombinationSum2 Solution40.cc)

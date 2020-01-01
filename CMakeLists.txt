@@ -75,5 +75,6 @@ add_subdirectory(35_search_insert_position)
 add_subdirectory(36_valid_sudoku)
 add_subdirectory(38_count_and_say)
 add_subdirectory(39_combination_sum)
+add_subdirectory(40_combination_sum_2)
 
 add_executable(main main.cpp)
