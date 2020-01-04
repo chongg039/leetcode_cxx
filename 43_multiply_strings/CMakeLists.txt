@@ -1,0 +1,1 @@
+add_library(MultiplyStrings Solution43.cc)
