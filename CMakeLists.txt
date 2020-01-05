@@ -79,5 +79,6 @@ add_subdirectory(40_combination_sum_2)
 add_subdirectory(41_first_missing_positive)
 add_subdirectory(42_trapping_rain_water)
 add_subdirectory(43_multiply_strings)
+add_subdirectory(44_wildcard_matching)
 
 add_executable(main main.cpp)
