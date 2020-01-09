@@ -6,11 +6,13 @@
 #define LEETCODE_SOLUTION44_H
 
 #include <string>
+#include <vector>
 
 class Solution44
 {
 public:
     static bool isMatch(const std::string &s, const std::string &p);
+    static bool isMatchDp(const std::string &s, const std::string &p);
 };
 
 

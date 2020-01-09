@@ -13,7 +13,7 @@ TEST(GTest44, t1)
     std::string s{"aa"};
     std::string p{"a"};
     bool result = false;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 TEST(GTest44, t2)
@@ -21,7 +21,7 @@ TEST(GTest44, t2)
     std::string s{"aa"};
     std::string p{"*"};
     bool result = true;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 TEST(GTest44, t3)
@@ -29,7 +29,7 @@ TEST(GTest44, t3)
     std::string s{"cb"};
     std::string p{"?a"};
     bool result = false;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 TEST(GTest44, t4)
@@ -37,7 +37,7 @@ TEST(GTest44, t4)
     std::string s{"adceb"};
     std::string p{"a*c?b"};
     bool result = true;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 TEST(GTest44, t5)
@@ -45,7 +45,7 @@ TEST(GTest44, t5)
     std::string s{"adceb"};
     std::string p{"*a*b"};
     bool result = true;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 TEST(GTest44, t6)
@@ -53,7 +53,7 @@ TEST(GTest44, t6)
     std::string s{"acdcb"};
     std::string p{"a*c?b"};
     bool result = false;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 TEST(GTest44, t7)
@@ -61,7 +61,7 @@ TEST(GTest44, t7)
     std::string s{"aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba"};
     std::string p{"a****b"};
     bool result = false;
-    EXPECT_EQ(result, Solution44::isMatch(s, p));
+    EXPECT_EQ(result, Solution44::isMatchDp(s, p));
 }
 
 GTEST_API_ int main(int argc, char *argv[])
