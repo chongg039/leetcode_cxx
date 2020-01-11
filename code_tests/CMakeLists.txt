@@ -42,6 +42,7 @@ add_executable(run_test_41 test_41.cc ../41_first_missing_positive/Solution41.cc
 add_executable(run_test_42 test_42.cc ../42_trapping_rain_water/Solution42.cc)
 add_executable(run_test_43 test_43.cc ../43_multiply_strings/Solution43.cc)
 add_executable(run_test_44 test_44.cc ../44_wildcard_matching/Solution44.cc)
+add_executable(run_test_45 test_45.cc ../45_jump_game_two/Solution45.cc)
 
 target_link_libraries(run_test_1 gtest gtest_main)
 target_link_libraries(run_test_2 gtest gtest_main)
@@ -87,3 +88,4 @@ target_link_libraries(run_test_41 gtest gtest_main)
 target_link_libraries(run_test_42 gtest gtest_main)
 target_link_libraries(run_test_43 gtest gtest_main)
 target_link_libraries(run_test_44 gtest gtest_main)
+target_link_libraries(run_test_45 gtest gtest_main)
