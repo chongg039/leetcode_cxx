@@ -1,0 +1,1 @@
+add_library(PermutationsTwo Solution47.cc)

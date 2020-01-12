@@ -82,5 +82,6 @@ add_subdirectory(43_multiply_strings)
 add_subdirectory(44_wildcard_matching)
 add_subdirectory(45_jump_game_two)
 add_subdirectory(46_permutations)
+add_subdirectory(47_permutations_2)
 
 add_executable(main main.cpp)

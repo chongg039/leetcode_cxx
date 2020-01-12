@@ -21,7 +21,7 @@ void Solution46::generate(const std::vector<int> &nums, int idx, std::vector<int
     // 针对当前idx要生成的新的组合
     // 向该末尾添加第idx个元素生成一个新的排列，这个新插入的一定是没有见过的
     // 停止条件：当插入大小等于原有数组大小
-    if (p.size() == nums.size()) {
+    if (idx == nums.size()) {
         res.push_back(p);
         return;
     }
@@ -29,7 +29,7 @@ void Solution46::generate(const std::vector<int> &nums, int idx, std::vector<int
         if (!visitor[i]) {
             p.push_back(nums[i]);
             visitor[i] = true;
-            generate(nums, i + 1, p, visitor);
+            generate(nums, idx + 1, p, visitor);
             p.pop_back();
             visitor[i] = false;
         }
