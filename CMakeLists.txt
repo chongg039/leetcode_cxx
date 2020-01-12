@@ -81,5 +81,6 @@ add_subdirectory(42_trapping_rain_water)
 add_subdirectory(43_multiply_strings)
 add_subdirectory(44_wildcard_matching)
 add_subdirectory(45_jump_game_two)
+add_subdirectory(46_permutations)
 
 add_executable(main main.cpp)

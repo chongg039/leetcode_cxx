@@ -13,6 +13,7 @@ class Solution45
 public:
     static int jump(std::vector<int> &nums);
     static int jump2(std::vector<int> &nums);
+    static int jump3(std::vector<int> &nums);
 };
 
 

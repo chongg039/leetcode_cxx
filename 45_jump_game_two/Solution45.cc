@@ -34,7 +34,7 @@ int Solution45::jump2(std::vector<int> &nums)
     return dp[0][nums.size() - 1];
 }
 
-int Solution45::jump(std::vector<int> &nums) {
+int Solution45::jump3(std::vector<int> &nums) {
     if (nums.size() <= 1) return 0;
     int right = nums.size() - 1;
     int count = 0;
@@ -48,4 +48,23 @@ int Solution45::jump(std::vector<int> &nums) {
         }
     }
     return count;
+}
+
+int Solution45::jump(std::vector<int> &nums) {
+    // 边界确定法23115
+    // 2(0-step): 2
+    // 2(1-step): 3,1
+    // 2(2-step): 1,5
+    // 每次更新当前边界，最后一个元素落在最后一部分的边界处
+    int cur_end = 0, res = 0, longest_dis = 0;
+    for (int i = 0; i < nums.size() - 1; ++i) {
+        if (i + nums[i] > longest_dis) {
+            longest_dis = i + nums[i];
+        }
+        if (i == cur_end) {
+            ++res;
+            cur_end = longest_dis;
+        }
+    }
+    return res;
 }
