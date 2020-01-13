@@ -85,5 +85,7 @@ add_subdirectory(45_jump_game_two)
 add_subdirectory(46_permutations)
 add_subdirectory(47_permutations_2)
 add_subdirectory(48_rotate_image)
+add_subdirectory(49_group_anagrams)
+add_subdirectory(242_valid_anagram)
 
 add_executable(main main.cpp)
