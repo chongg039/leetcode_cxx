@@ -12,6 +12,7 @@ class Solution50
 {
 public:
     static double myPow(double x, int n);
+    static double myPowBf(double x, int n);
 };
 
 
