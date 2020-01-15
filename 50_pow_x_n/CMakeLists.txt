@@ -1,0 +1,1 @@
+add_library(PowXN Solution50.cc)
