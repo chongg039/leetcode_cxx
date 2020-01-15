@@ -6,14 +6,13 @@
 #define LEETCODE_SOLUTION6_H
 
 #include <string>
+#include <vector>
 #include <algorithm>
-
-using std::string;
-using std::max;
 
 class Solution6 {
 public:
-    string convert(string s, int numRows);
+    std::string convertBf(std::string s, int numRows);
+    std::string convert(std::string s, int numRows);
 };
 
 
