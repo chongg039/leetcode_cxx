@@ -1,0 +1,1 @@
+add_library(NQueensTwo Solution52.cc)
