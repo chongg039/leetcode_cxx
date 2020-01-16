@@ -89,6 +89,7 @@ add_subdirectory(49_group_anagrams)
 add_subdirectory(50_pow_x_n)
 add_subdirectory(51_n_queens)
 add_subdirectory(52_n_queens_2)
+add_subdirectory(53_maximum_sub_array)
 add_subdirectory(242_valid_anagram)
 
 add_executable(main main.cpp)
