@@ -87,6 +87,7 @@ add_subdirectory(47_permutations_2)
 add_subdirectory(48_rotate_image)
 add_subdirectory(49_group_anagrams)
 add_subdirectory(50_pow_x_n)
+add_subdirectory(51_n_queens)
 add_subdirectory(242_valid_anagram)
 
 add_executable(main main.cpp)
