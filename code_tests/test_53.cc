@@ -8,7 +8,7 @@
 using testing::Test;
 using testing::InitGoogleTest;
 
-TEST(GTest42, t1)
+TEST(GTest53, t1)
 {
     std::vector<int> nums{-2, 1, -3, 4, -1, 2, 1, -5, 4};
     int target = 6;
