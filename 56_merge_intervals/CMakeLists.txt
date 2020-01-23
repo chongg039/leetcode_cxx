@@ -1,0 +1,1 @@
+add_library(MergeIntervals Solution56.cc)

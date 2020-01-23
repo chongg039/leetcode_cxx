@@ -92,6 +92,7 @@ add_subdirectory(52_n_queens_2)
 add_subdirectory(53_maximum_sub_array)
 add_subdirectory(54_spiral_matrix)
 add_subdirectory(55_jump_game)
+add_subdirectory(56_merge_intervals)
 add_subdirectory(242_valid_anagram)
 
 add_executable(main main.cpp)
