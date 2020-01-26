@@ -1,0 +1,1 @@
+add_library(InsertInterval Solution57.cc)
