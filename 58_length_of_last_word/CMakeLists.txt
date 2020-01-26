@@ -1,0 +1,1 @@
+add_library(LengthOfLastWord Solution58.cc)
