@@ -1,0 +1,1 @@
+add_library(SpiralMatrix2 Solution59.cc)

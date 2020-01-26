@@ -95,6 +95,7 @@ add_subdirectory(55_jump_game)
 add_subdirectory(56_merge_intervals)
 add_subdirectory(57_insert_interval)
 add_subdirectory(58_length_of_last_word)
+add_subdirectory(59_spiral_matrix_2)
 add_subdirectory(242_valid_anagram)
 
 add_executable(main main.cpp)
