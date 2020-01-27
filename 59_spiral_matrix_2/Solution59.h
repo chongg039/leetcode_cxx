@@ -12,10 +12,10 @@ class Solution59
 public:
     enum direction
     {
-        RIGHT = 0,
-        DOWN = 1,
-        LEFT = 2,
-        UPON = 3
+        RIGHT   = 0,
+        DOWN    = 1,
+        LEFT    = 2,
+        UPON    = 3
     };
 
     static std::vector<std::vector<int>> generateMatrix(int n);
