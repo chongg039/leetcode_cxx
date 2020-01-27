@@ -9,7 +9,6 @@ std::string Solution60::getPermutation(int n, int k)
     // 递归
     std::string s, res;
     for (int i = 0; i < n; ++i) {
-//        s.push_back(i + 1);
         s += std::to_string(i + 1);
     }
     while (n > 0) {
