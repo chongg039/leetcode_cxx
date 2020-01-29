@@ -98,6 +98,7 @@ add_subdirectory(58_length_of_last_word)
 add_subdirectory(59_spiral_matrix_2)
 add_subdirectory(60_permutation_sequence)
 add_subdirectory(61_rotate_list)
+add_subdirectory(62_unique_paths)
 add_subdirectory(242_valid_anagram)
 
 add_executable(main main.cpp)

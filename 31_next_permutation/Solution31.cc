@@ -20,6 +20,7 @@ void Solution31::nextPermutation(std::vector<int> &nums)
         }
     }
     std::sort(nums.begin(), nums.end());
+    // std::next_permutation(nums.begin(), nums.end());
 }
 
 void Solution31::swap(std::vector<int>::iterator left, std::vector<int>::iterator right)
